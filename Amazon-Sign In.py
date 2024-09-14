@@ -22,7 +22,7 @@ driver.find_element(By.CSS_SELECTOR, value='.a-icon.a-icon-logo')
 #Create Account
 driver.find_element(By.CSS_SELECTOR, value='.a-spacing-small')
 
-#Your name
+#Your full name
 driver.find_element(By.CSS_SELECTOR, "[placeholder='First and last name']")
 
 #Your Email/Number
