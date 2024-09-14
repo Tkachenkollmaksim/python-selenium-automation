@@ -3,13 +3,13 @@ Feature: Test for Target Search Functionality
   # Enter feature description here
 
   Scenario: User can search for coffee
-    Given Open target.com
+    Given Open the target.com
     When  Search for Coffee
     Then Verify that correct search results shown for coffee
 
 
   Scenario: User can search for tea
-    Given Open target.com
+    Given Open the target.com
     When  Search for Tea
     Then Verify that correct search results shown for tea
 
