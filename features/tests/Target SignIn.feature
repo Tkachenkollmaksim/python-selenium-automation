@@ -5,4 +5,4 @@ Feature: Test for Target Sign In
     Given Open target.com
     When  Click Sign In
     Then   From right side navigation menu, click Sign In
-    Then Verify Sign In form ls
+    Then Verify Sign In form opened
