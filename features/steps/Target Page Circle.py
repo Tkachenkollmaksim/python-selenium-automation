@@ -5,11 +5,11 @@ from time import sleep
 
 
 
-#@when('Search for Benefit')
-#def find_cell(context):
-#    #Benefit cells
-#    context.driver.find_element(By.CSS_SELECTOR, value="[data-test='@web/slingshot-components/CellsComponent/Link']")
-#    sleep(2)
+@when('Search for Benefit')
+def find_cell(context):
+   #Benefit cells
+   context.driver.find_element(By.CSS_SELECTOR, value="[data-test='@web/slingshot-components/CellsComponent/Link']")
+   sleep(2)
 
 
 @then('Verify that there are {expected_amount} benefit cells')

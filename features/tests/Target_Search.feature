@@ -5,7 +5,8 @@ Feature: Test for Target Search Functionality
   Scenario: User can search for coffee
     Given Open the target.com
     When  Search for Coffee
-    Then Verify that correct search results shown for coffee
+    Then Verify that correct search results shown for Сoffee
+    Then Verify product Coffee in URL
 
 
   Scenario: User can search for tea
