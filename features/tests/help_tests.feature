@@ -1,6 +1,19 @@
-# Created by maksimtkachenko at 10/7/24
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Tests for Help pages
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: User can select Help topic Promotions & Coupons
+    Given Open Help page for Returns
+    Then Verify help Returns page opened
+    When Select Help topic Promotions & Coupons
+    Then Verify help Current promotions page opened
+
+  Scenario: User can select Help topic About Target Circle
+    Given Open Help page for Returns
+    Then Verify help Returns page opened
+    When Select Help topic Target Circle™
+    Then Verify help About Target Circle page opened
+
+  Scenario: User can select Help topic Partner Programs
+    Given Open Help page for Returns
+    Then Verify help Returns page opened
+    When Select Help topic Partner Programs
+    Then Verify help Ulta Beauty at Target page opened

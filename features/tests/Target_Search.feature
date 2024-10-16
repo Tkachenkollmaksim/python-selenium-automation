@@ -24,3 +24,9 @@ Feature: Test for Target Search Functionality
     |coffee      | coffee         |
     |mug         | mug            |
     |tea         | tea            |
+
+  Scenario: User can see favorites tooltip for search
+    Given Open the target.com
+    When  Search for Tea
+    And Hover favorites icon
+    Then Favorites tooltip is shown
