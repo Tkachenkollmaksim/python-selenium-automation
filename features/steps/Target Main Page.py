@@ -31,8 +31,8 @@ def click_cart(context):
     sleep(1) # Wait for page to load
 
 
-#@when('Click Sign In')
-def search_product(context):
+@when('Click Sign In')
+def click_sign_in(context):
     #Click Sign In
     context.driver.find_element(By.CSS_SELECTOR, value='.sc-58ad44c0-3.kwbrXj.h-margin-r-x3').click()
 #    sleep(5) # Wait for page to load

@@ -7,11 +7,23 @@ class Header(Page):
     CART_BTN = (By.CSS_SELECTOR, "[data-test='@web/CartLink']")
     SEARCH_FIELD = (By.ID, 'search')
     SEARCH_BTN = (By.XPATH, "//button[@data-test='@web/Search/SearchButton']")
+    SIGN_IN = (By.CSS_SELECTOR, '.sc-58ad44c0-3.kwbrXj.h-margin-r-x3')
+    NAV_SIGN_IN = (By.CSS_SELECTOR, '.sc-859e7637-0.hHZPQy')
+
+
+    # def sign_in(self):
+    #     self.click(*self.SIGN_IN)
+    #     sleep(2)
+
+    def nav_sign_in(self):
+        self.click(*self.NAV_SIGN_IN)
+        sleep(1)
+
 
     def search_product(self, item):
         self.input_text(item, *self.SEARCH_FIELD)
-        self.click(*self.SEARCH_FIELD)
-        sleep(6)
+        self.click(*self.SEARCH_BTN)
+        sleep(9)
 
     def click_cart(self):
         #self.wait_to_be_clickable_click(*self.CART_BTN)
@@ -27,3 +39,4 @@ class Header(Page):
         print(cart_btn)
 
         cart_btn.click()
+

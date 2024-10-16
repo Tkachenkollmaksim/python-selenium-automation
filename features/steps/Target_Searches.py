@@ -10,14 +10,24 @@ PRODUCT_IMG = (By.CSS_SELECTOR, 'img')
 
 @when('Search for {item}')
 def search_product(context, item):
-    # print(item)
-    # Search field => enter tea
-    context.driver.find_element(By.ID, 'search').send_keys(item)
-    # Search button => click
-    context.driver.find_element(By.XPATH, "//button[@data-test='@web/Search/SearchButton']").click()
-    sleep(8)  # wait for search results page to load
+    context.app.header.search_product(item)
+    # # print(item)
+    # # Search field => enter tea
+    # context.driver.find_element(By.ID, 'search').send_keys(item)
+    # # Search button => click
+    # context.driver.find_element(By.XPATH, "//button[@data-test='@web/Search/SearchButton']").click()
+    # sleep(8)  # wait for search results page to load
 #    context.app.header.search_product(item)
 
+
+@when('Hover favorites icon')
+def hover_favorites(context):
+    context.app.search_results_page.hover_favorites()
+
+
+@then('Favorites tooltip is shown')
+def verify_favorites(context):
+    context.app.search_results_page.verify_favorites()
 
 
 @then('Verify that correct search results shown for {product}')

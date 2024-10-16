@@ -1,6 +1,6 @@
 # Created by maksimtkachenko at 10/1/24
 Feature: Tests for Target App page
-
+  @smoke
   Scenario: User is able to open Privacy Policy
     Given Open Target App page
     And Store original window

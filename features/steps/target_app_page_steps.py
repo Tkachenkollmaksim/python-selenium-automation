@@ -3,7 +3,7 @@ from time import sleep
 
 
 @given('Open Target App page')
-def open_tardget_app(context):
+def open_target_app(context):
     context.app.target_app_page.open_target_app()
 
 
